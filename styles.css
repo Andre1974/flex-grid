@@ -13,8 +13,8 @@ html {
   border: 2px solid red;
   padding: 5px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr 3fr 2fr 1fr 1fr;
+  grid-template-columns: 1fr 3fr 3fr;
+  grid-template-rows: 0.5fr 3fr 2fr 1fr 1fr;
   grid-template-areas:
     "navl navl navr"
     "picture inhalt1 inhalt1"
@@ -33,44 +33,59 @@ html {
 .navl {
   grid-area: navl;
   background-color: bisque;
+  justify-content: start;
+  align-items: center;
+  padding: 5px 40px 5px 0px;
+  /* margin: 30px; */
 }
 
 .navr {
   grid-area: navr;
-  background-color: burlywood;
-  /* grid-column: span1; */
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 20px;
 }
 
-.picture{
+.picture {
   grid-area: picture;
+  background-size: contain;
   background-color: yellow;
-
 }
 
-.inhalt1{
+.inhalt1 {
   grid-area: inhalt1;
+  display: block;
+  padding: 10px;
   background-color: beige;
 }
 
-.posts{
+.posts {
   grid-area: posts;
+  display: block;
 }
 
-.checkout-g{
+.checkout-g {
   grid-area: checkout-g;
   background-color: beige;
+  flex-direction: column;
 }
 
-.checkout-f{
+.checkout-f {
   grid-area: checkout-f;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-end; */
+  align-items: flex-end;
+  padding-right:10px;
   background-color: orange;
+  
 }
 
-.galerie{
+.galerie {
   grid-area: galerie;
 }
 
-.related{
+.related {
   grid-area: related;
 }
 
@@ -79,7 +94,28 @@ html {
   background-color: darkgray;
 }
 
+.btn {
+  padding: 0.4em;
+  background-color: rgb(117, 170, 29);
+  border-radius: 15px;
+  box-shadow: 10px gray;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
 li {
   list-style: none;
-  padding: 5px;
+  background-color: rgb(127, 35, 212, 0.2);
+  padding-right: 2em;
+  padding-left: 10px;
+}
+
+h1{
+  color:#67A6AA;
+}
+h4{
+  padding: 10px;
 }
