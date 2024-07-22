@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+}
+
 .container {
   border: 2px solid red;
   padding: 5px;
@@ -11,4 +16,6 @@
 
 .item {
   background-color: aquamarine;
+  border: 1px solid green;
+  margin: 10px;
 }
