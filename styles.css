@@ -10,7 +10,6 @@ html {
 }
 
 .container {
-  /* border: 2px solid red; */
   padding: 5px;
   display: grid;
   grid-template-columns: 1fr 3fr 3fr;
@@ -37,7 +36,7 @@ html {
   align-items: center;
   list-style: none;
   padding: 5px 40px 5px 0px;
- 
+
   /* margin: 30px; */
 }
 
@@ -78,7 +77,7 @@ html {
   grid-area: checkout-container;
   display: flex;
   justify-content: space-between;
-  border: 1px solid #CDCDCD;
+  border: 1px solid #cdcdcd;
   padding: 10px;
 }
 
@@ -89,22 +88,19 @@ html {
 }
 
 .checkout-g {
-  display: flex;  
+  display: flex;
   flex-direction: column; /* Anordnung der Kinder-Elemente in einer Spalte */
   justify-content: center; /* Vertikale Zentrierung */
   align-items: flex-start; /* Horizontale Ausrichtung nach links */
   padding: 10px;
-  
 }
 
 .checkout-f {
   display: flex;
-
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
   padding-right: 10px;
-  
 }
 
 .galerie {
@@ -168,13 +164,13 @@ li {
   margin-left: 10px;
 }
 
-.navl li{
+.navl li {
   background-color: rgb(196, 145, 186, 0.2);
 }
 
-
 h1 {
-  color: #67a6aa;
+  font-size: 3em;
+  color: #73afb9;
 }
 h4 {
   padding: 10px;
@@ -206,5 +202,4 @@ hr {
 .horizontale-line {
   grid-area: line;
   display: block;
-  
 }
