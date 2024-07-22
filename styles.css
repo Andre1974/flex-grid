@@ -14,9 +14,10 @@ html {
   padding: 5px;
   display: grid;
   grid-template-columns: 1fr 3fr 3fr;
-  grid-template-rows: 0.5fr 3fr 2fr 200px 1fr;
+  grid-template-rows: 0.5fr 0.3fr 3fr 2fr 200px 1fr;
   grid-template-areas:
     "navl navl navr"
+    "line line line"
     "picture inhalt1 inhalt1"
     "posts checkout-container checkout-container"
     "galerie galerie related"
@@ -200,4 +201,10 @@ h4 {
 hr {
   color: rgb(220, 220, 245);
   margin-bottom: 5px;
+}
+
+.horizontale-line {
+  grid-area: line;
+  display: block;
+  
 }
