@@ -61,7 +61,8 @@ html {
 
 .posts {
   grid-area: posts;
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 
 .checkout-g {
@@ -87,11 +88,15 @@ html {
 
 .related {
   grid-area: related;
+  flex-direction: column;
 }
 
 .footer {
   grid-area: footer;
   background-color: darkgray;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .btn {
