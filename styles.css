@@ -9,6 +9,16 @@ html {
   font-size: 14px;
 }
 
+h1 {
+  font-size: 3em;
+  color: #73afb9;
+}
+h4 {
+  padding: 10px;
+  font-weight: 100;
+  
+}
+
 hr {
   color: rgb(220, 220, 245);
   margin-bottom: 5px;
@@ -160,13 +170,22 @@ hr {
   cursor: pointer;
   border: 0px;
   background-color: rgb(226, 220, 220);
-  box-shadow: 0px 0px 10px #67a6aa;
+  color: #0f0f0f;
+  border-radius: 5px;
+  border: 1px solid rgb(132, 132, 214);
+  box-shadow: 2px 2px 15px #24254d;
   margin-top: 10px;
 }
 
 .btn2:hover {
-  background-color: rgb(180, 180, 180);
-  border-radius: 10px;
+  background-color: rgb(19, 221, 80);
+  border-radius: 5px;
+  color: aqua;
+}
+
+.btn2 a, a:hover{
+   color: black;
+   
 }
 
 a {
@@ -181,20 +200,15 @@ li {
 
 .navl li {
   background-color: rgb(196, 145, 186, 0.2);
+  padding: 5px;
+  border-radius: 5px;
+
 }
 
 .navl li:hover {
   background-color: rgb(211, 83, 194);
 }
 
-h1 {
-  font-size: 3em;
-  color: #73afb9;
-}
-h4 {
-  padding: 10px;
-  font-weight: 100;
-}
 
 .galerie p {
   display: block;
