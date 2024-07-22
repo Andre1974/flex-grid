@@ -36,6 +36,7 @@ html {
   align-items: center;
   list-style: none;
   padding: 5px 40px 5px 0px;
+ 
   /* margin: 30px; */
 }
 
@@ -165,6 +166,11 @@ li {
   margin-right: 2em;
   margin-left: 10px;
 }
+
+.navl li{
+  background-color: rgb(196, 145, 186, 0.2);
+}
+
 
 h1 {
   color: #67a6aa;
