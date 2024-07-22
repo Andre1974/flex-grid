@@ -16,7 +16,6 @@ h1 {
 h4 {
   padding: 10px;
   font-weight: 100;
-  
 }
 
 hr {
@@ -27,8 +26,8 @@ hr {
 .container {
   padding: 5px;
   display: grid;
-  grid-template-columns: 1fr 3fr 3fr;
-  grid-template-rows: 0.5fr 0.3fr 3fr 2fr 200px 1fr;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-rows: 0.5fr 0.1fr auto auto 1fr 1fr;
   grid-template-areas:
     "navl navl navr"
     "line line line"
@@ -40,10 +39,10 @@ hr {
 
 .item {
   display: flex;
-  /* background-color: aquamarine; */
   border: 0px solid green;
   margin: 10px;
 }
+
 /*ITEMS mit Klassen*/
 .navl {
   grid-area: navl;
@@ -51,8 +50,6 @@ hr {
   align-items: center;
   list-style: none;
   padding: 5px 40px 5px 0px;
-
-  /* margin: 30px; */
 }
 
 .navr {
@@ -64,27 +61,32 @@ hr {
 
 .picture {
   grid-area: picture;
-  background-size: contain;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
   background-color: yellow;
+}
+
+.picture img {
+  width: 100%;
+  height: auto;
 }
 
 .inhalt1 {
   grid-area: inhalt1;
   display: block;
-  /* padding: 10px;
-  background-color: beige; */
 }
 
 .inhalt1 p {
-  margin-top: 20px; /* Abstand über dem Absatz */
-  margin-bottom: 20px; /* Abstand unter dem Absatz */
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .posts {
   grid-area: posts;
   display: flex;
   flex-direction: column;
-  border-top: 4px solid#C491BA;
+  border-top: 4px solid #c491ba;
   background-color: #ebd2d6;
 }
 
@@ -104,9 +106,9 @@ hr {
 
 .checkout-g {
   display: flex;
-  flex-direction: column; /* Anordnung der Kinder-Elemente in einer Spalte */
-  justify-content: center; /* Vertikale Zentrierung */
-  align-items: flex-start; /* Horizontale Ausrichtung nach links */
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   padding: 10px;
 }
 
@@ -121,12 +123,9 @@ hr {
 .galerie {
   grid-area: galerie;
   display: grid;
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(100px, 1fr)
-  ); /* Flexibles Raster für die Bilder */
-  gap: 10px; /* Abstand zwischen den Bildern */
-  padding: 10px; /* Innenabstand für die Galerie */
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 10px;
+  padding: 10px;
 }
 
 .galerie img {
@@ -142,7 +141,6 @@ hr {
 
 .footer {
   grid-area: footer;
-
   color: white;
   background-color: darkgray;
   align-items: center;
@@ -183,9 +181,9 @@ hr {
   color: aqua;
 }
 
-.btn2 a, a:hover{
-   color: black;
-   
+.btn2 a,
+a:hover {
+  color: black;
 }
 
 a {
@@ -199,16 +197,15 @@ li {
 }
 
 .navl li {
-  background-color: rgb(196, 145, 186, 0.2);
+  background-color: rgba(196, 145, 186, 0.2);
   padding: 5px;
   border-radius: 5px;
-
+  cursor: pointer;
 }
 
 .navl li:hover {
   background-color: rgb(211, 83, 194);
 }
-
 
 .galerie p {
   display: block;
@@ -230,4 +227,54 @@ li {
 .horizontale-line {
   grid-area: line;
   display: block;
+}
+
+/* Media Queries für kleinere Bildschirme */
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "navl"
+      "navr"
+      "line"
+      "picture"
+      "inhalt1"
+      "posts"
+      "checkout-container"
+      "galerie"
+      "related"
+      "footer";
+  }
+
+  .navr {
+    justify-content: center;
+  }
+
+  .inhalt1 {
+    padding: 10px;
+  }
+
+  .checkout-container {
+    flex-direction: column;
+  }
+
+  .picture {
+    height: auto;
+  }
+
+  .picture img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  .btn {
+    width: 100%;
+  }
 }
