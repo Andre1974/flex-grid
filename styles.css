@@ -9,6 +9,11 @@ html {
   font-size: 14px;
 }
 
+hr {
+  color: rgb(220, 220, 245);
+  margin-bottom: 5px;
+}
+
 .container {
   padding: 5px;
   display: grid;
@@ -144,6 +149,11 @@ html {
   color: white;
 }
 
+.btn:hover {
+  background-color: rgb(58, 197, 40);
+  border-radius: 10px;
+}
+
 .btn2 {
   width: 50px;
   height: 25px;
@@ -152,6 +162,11 @@ html {
   background-color: rgb(226, 220, 220);
   box-shadow: 0px 0px 10px #67a6aa;
   margin-top: 10px;
+}
+
+.btn2:hover {
+  background-color: rgb(180, 180, 180);
+  border-radius: 10px;
 }
 
 a {
@@ -166,6 +181,10 @@ li {
 
 .navl li {
   background-color: rgb(196, 145, 186, 0.2);
+}
+
+.navl li:hover {
+  background-color: rgb(211, 83, 194);
 }
 
 h1 {
@@ -192,11 +211,6 @@ h4 {
 
 .related li {
   list-style: disc;
-}
-
-hr {
-  color: rgb(220, 220, 245);
-  margin-bottom: 5px;
 }
 
 .horizontale-line {
